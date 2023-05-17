@@ -5,7 +5,7 @@ using System.IO;
 
 public class MainManager : MonoBehaviour
 {
-	public static MainManager Instance;
+	public static MainManager Instance { get; private set; } // add getter and private setter
 
     public Color TeamColor;
 
